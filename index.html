@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Wallapop</title>
+  </head>
+  <body>
+    <!-- Start navigation bar-->
+    <nav class="nav-bar">
+      <!-- Top navbar-->
+      <div class="top-nav">
+        <p class="nav-logo">WALLAPOP</p>
+        <div class="search-bar">
+          <select class="categories-list" name="categories" id="categories">
+            <option selected="selected" value="All">All</option>
+            <option value="Motor">Motor</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Work">Work</option>
+          </select>
+          <input class="search-bar-input" type="text" placeholder="search" />
+          <img class="find-logo" src="./images/find.png" alt="" />
+        </div>
+        <img class="store-logo" src="./images/store.png" alt="store logo" />
+        <div>
+          <a class="sign-in" href="./login.html">
+            <img
+              class="sign-in-logo"
+              src="./images/sign-in.png"
+              alt="sign-in logo"
+            />
+            <p class="sign-in-text">Sign In</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom navbar -->
+      <div class="bottom-nav">
+        <p class="bottom-nav-item">Motor</p>
+        <p class="bottom-nav-item">Lifestyle</p>
+        <p class="bottom-nav-item">Mobile</p>
+        <p class="bottom-nav-item">Work</p>
+      </div>
+    </nav>
+    <!-- End of navigation bar -->
+    <section id="productList"></section>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+:root {
+  --main-text-color: #163172;
+}
+
+body {
+  background-color: #f6f6f6;
+  color: var(--main-text-color);
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-logo {
+  letter-spacing: 3.5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  --gap: 40px;
+  margin: 20px 5px;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 30px;
+}
+
+.search-bar-input {
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+
+.find-logo {
+  margin-left: 10px;
+}
+
+.store-logo,
+.sign-in-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.find-logo {
+  width: 15px;
+  height: 15px;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.categories-list {
+  margin-left: 5px;
+  width: 40px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: none;
+  outline: none;
+  border-right: 1px solid black;
+}
+
+/* bottom navigation bar */
+
+.bottom-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  gap: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  height: 40px;
+  color: white;
+  background-color: var(--main-text-color);
+  /* background: linear-gradient(to right, var(--main-text-color) 97%, transparent); */
+}
+
+/* Products List */
+#productList {
+  margin: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card-image {
+  width: 220px;
+  height: 220px;
+}
