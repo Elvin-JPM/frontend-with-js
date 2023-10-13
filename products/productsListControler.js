@@ -9,10 +9,12 @@ export const getProducts = async (productsNode) => {
   if (Array.isArray(products) && products.length === 0) {
     console.log("The array is empty");
   } else {
-    products.forEach((product) => {
-      console.log(product);
-        const productCard = drawProducts(product);
-        productsNode.appendChild(productCard);
+    products.forEach((product) =>
+    {
+      const productType = product.for_sale === 1 ? "For Sale" : "Looking to buy";
+      product.for_sale = productType;
+      const productCard = drawProducts(product);
+      productsNode.appendChild(productCard);
     });
   }
 };
