@@ -2,14 +2,15 @@
 
 export const drawProducts = (product) => {
   const productContainer = document.createElement("div");
+  productContainer.className = 'card';
   productContainer.innerHTML = `
-        <div class="card">
+            <a href="productDetail.html?id=${product.id}" class="goToDetail">
             <p class= "card-title">${product.name}</p>
             <img src="./images/productImages/${product.photo}.jpeg" class="card-image" alt="image of ${product.name}"></img>
             <p>${product.for_sale}</p>
             <p>Price: $${product.price}</p>
             <p>Tags: ${product.tags}</p>
-        </div>
+            </a>
     `;
   return productContainer;
 };

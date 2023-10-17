@@ -1,7 +1,7 @@
 :root {
   --main-text-color: #163172;
-  --light-grey: #D8D9DA;
-  --dark-grey: #61677A;
+  --light-grey: #d8d9da;
+  --dark-grey: #61677a;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  --gap: 40px;
+  /* --gap: 40px; */
   margin: 2rem 0.5rem;
   align-items: center;
 }
@@ -72,8 +72,17 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   color: black;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.sign-in:hover {
+  background-color: var(--light-grey);
+  transform: scale(1.02);
 }
 
 .categories-list {
@@ -115,13 +124,13 @@ body {
 .card {
   padding: 0.5rem;
   font-size: 1.3rem;
-  border: 1px solid var(--dark-grey);
+  /* border: 1px solid var(--dark-grey); */
   border-radius: 0.8rem;
   text-align: center;
   line-height: 1.5;
   background: linear-gradient(to bottom right, white, var(--light-grey));
-  box-shadow: 3px 3px 5px 4px rgba(90, 111, 217, 0.453);
-  transition: translate 0.2s;
+  box-shadow: 3px 3px 4px 4px rgba(90, 111, 217, 0.453);
+  transition: translate 0.25s;
 }
 
 .card-title {
@@ -136,5 +145,10 @@ body {
 
 .card:hover {
   --transform: scale(1.01);
-  translate: 0 -1rem;
+  translate: 0 -0.7rem;
+}
+
+.goToDetail {
+  text-decoration: none;
+  color: inherit;
 }

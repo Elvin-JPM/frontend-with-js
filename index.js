@@ -1,33 +1,33 @@
-'use strict';
-
-// Adjusting The size of the navigation bar according to the option selected
-const selectList = document.querySelector('.categories-list');
+"use strict";
 import { getProducts } from "./products/productsListControler.js";
 
-const productsNode = document.getElementById('productList');
+// Adjusting The size of the navigation bar according to the option selected
+const selectList = document.querySelector(".categories-list");
 
-selectList.addEventListener('change', () =>
-{
-    const selectedOption = selectList.options[selectList.selectedIndex].textContent;
-    let selectWidth = selectList.offsetWidth;
-    // Create a temporary canvas
-    const canvas = document.createElement("canvas");
-    const context = canvas.getContext("2d");
+const productsNode = document.getElementById("productList");
 
-    // Set the font style for measurement 
-    const fontSize = window.getComputedStyle(
-        selectList.options[selectList.selectedIndex]
-    ).fontSize;
+selectList.addEventListener("change", () => {
+  const selectedOption =
+    selectList.options[selectList.selectedIndex].textContent;
+  let selectWidth = selectList.offsetWidth;
+  // Create a temporary canvas
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
 
-    const fontFamily = window.getComputedStyle(
-        selectList.options[selectList.selectedIndex]
-    ).font;
-    
-    context.font = fontFamily;
+  // Set the font style for measurement
+  const fontSize = window.getComputedStyle(
+    selectList.options[selectList.selectedIndex]
+  ).fontSize;
 
-    const textWidth = context.measureText(selectedOption).width;
-    
-    selectList.style.width = `${textWidth + 24}px`;
+  const fontFamily = window.getComputedStyle(
+    selectList.options[selectList.selectedIndex]
+  ).font;
+
+  context.font = fontFamily;
+
+  const textWidth = context.measureText(selectedOption).width;
+
+  selectList.style.width = `${textWidth + 24}px`;
 });
 
 getProducts(productsNode);
