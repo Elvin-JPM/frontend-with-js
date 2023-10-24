@@ -9,22 +9,19 @@
 //   productDetail.appendChild(productDetailContainer);
 // };
 
-const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
-if (id) {
-  console.log(id); // or display it in the page
-}
 
-const fetchProduct = async () => {
+export const fetchProduct = async (id) => {
   const url = `http://127.0.0.1:8000/api/products/${id}`;
+  let selectedProduct = {};
   try {
     console.log(url);
     const response = await fetch(url);
     const product = await response.json();
     console.log(product);
+    selectedProduct = product;
   } catch (error) {
     console.log("Something went wrong.");
   }
-};
 
-fetchProduct();
+  return selectedProduct;
+};
