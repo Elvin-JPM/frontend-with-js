@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signUp.css" />
+    <title>Sing Up</title>
+  </head>
+  <body>
+    <form class="signup-form">
+      <input 
+        type="email" 
+        class="login-input email-input" 
+        placeholder="email"
+        name="email" 
+        required
+      />
+      <input
+        type="password"
+        class="login-input password-input"
+        placeholder="password"
+        name="password"
+        required
+      />
+      <input
+        type="password"
+        class="login-input passwordConfirm-input"
+        placeholder="confirm password"
+        name="confirmPassword"
+        required
+      />
+      <input type="submit" class="btn-signup" value="Sign Up"></input>
+    </form>
+
+    <script type="module" src="./signUp/index.js"></script>
+  </body>
+</html>
