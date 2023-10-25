@@ -2,111 +2,202 @@
   "users": [],
   "products": [
     {
+      "id": 1,
       "name": "iphone 15",
       "for_sale": 1,
       "price": 1000,
       "photo": "iphone_15",
-      "tags": ["mobile"]
+      "tags": ["mobile"],
+      "description": {
+        "status": "Like New",
+        "Details": "No details",
+        "Specifications": "128 GB, Retina Display, Type-C port, 120hz display, glass back, 108MP camera"
+      }
     },
     {
+      "id": 2,
       "name": "iphone 14",
       "for_sale": 0,
       "price": 850,
       "photo": "iphone_14",
-      "tags": ["mobile"]
+      "tags": ["mobile"],
+      "description": {
+        "status": "Used-Good",
+        "Details": "A little dent on one sid",
+        "Specifications": "128 GB, Retina Display, 60hz display, 48MP camera"
+      }
     },
     {
+      "id": 3,
       "name": "Xbox Series S",
       "for_sale": 1,
       "price": 280,
       "photo": "xbox_series_S",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "New",
+        "Details": "No details",
+        "Specifications": "512 GB, 16Gb RAM, explandable storage, one controller included, 1440p up to 120hz, 4k up to 60hz , 48MP camera"
+      }
     },
     {
+      "id": 4,
       "name": "Xbox Series X",
       "for_sale": 1,
       "price": 480,
       "photo": "xbox_series_X",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "Like New",
+        "Details": "No details",
+        "Specifications": "1TB, 16Gb RAM, expandable SSD storage, 4k 120hz"
+      }
     },
     {
+      "id": 5,
       "name": "Samsung Galaxy S22",
       "for_sale": 1,
       "price": 800,
       "photo": "samsung_galaxy_s22",
-      "tags": ["mobile"]
+      "tags": ["mobile"],
+      "description": {
+        "status": "New",
+        "Details": "No details",
+        "Specifications": "128 GB, LCD display, Type-C port, 120hz display, glass back, 48MP camera"
+      }
     },
     {
+      "id": 6,
       "name": "Samsung Galaxy S23",
       "for_sale": 0,
       "price": 1200,
       "photo": "samsung_galaxy_s23",
-      "tags": ["mobile", "work"]
+      "tags": ["mobile", "work"],
+      "description": {
+        "status": "Used-Good",
+        "Details": "A couple of scratches on the screen",
+        "Specifications": "128 GB, LCD display, Type-C port, 120hz display, glass back, 48MP camera"
+      }
     },
     {
+      "id": 7,
       "name": "Dell Latitude 5521",
       "for_sale": 1,
       "price": 1600,
       "photo": "dell_latitud_5521",
-      "tags": ["work"]
+      "tags": ["work"],
+      "description": {
+        "status": "Used-Good",
+        "Details": "A little wearing on the keyboarg",
+        "Specifications": "256GB SSD, 1080p, Thunderbolt 4, 60hz display, 16 GB RAM, 720p camera"
+      }
     },
     {
+      "id": 8,
       "name": "Macbook Air M1",
       "for_sale": 1,
       "price": 800,
       "photo": "macbook_air_m1",
-      "tags": ["work"]
+      "tags": ["work"],
+      "description": {
+        "status": "Refurbished",
+        "Details": "No details",
+        "Specifications": "256 GB SSD, Retina display, 2 Type-C port, 60hz display, true tone, 1440p display"
+      }
     },
     {
+      "id": 9,
       "name": "Macbook Pro M2",
       "for_sale": 0,
       "price": 1500,
       "photo": "macbook_pro_m2",
-      "tags": ["work"]
+      "tags": ["work"],
+      "description": {
+        "status": "Refurbished",
+        "Details": "No details",
+        "Specifications": "512 GB SSD, Retina display, 2 Type-C port, magsafe charger, 120hz display, true tone, 4k display"
+      }
     },
     {
+      "id": 10,
       "name": "Daily Stoic",
       "for_sale": 1,
       "price": 10,
       "photo": "book_daily_stoic",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "Used-Good",
+        "Details": "No details",
+        "Specifications": "The Daily Stoic is a year-long compilation of short, daily meditations from ancient Stoic philosophers like Seneca, Epictetus, Marcus Aurelius, and others, teaching you equanimity, resilience, and perseverance via the three Stoic disciplines of perception, action, and will."
+      }
     },
     {
+      "id": 11,
       "name": "King: A Life",
       "for_sale": 1,
       "price": 12,
       "photo": "book_king_a_life",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "New",
+        "Details": "No details",
+        "Specifications": "The first full biography in decades, King mixes revelatory and exhaustive new research with brisk and accessible storytelling to forge the definitive life for our times."
+      }
     },
     {
+      "id": 12,
       "name": "Man's search for meaning",
       "for_sale": 1,
       "price": 15,
       "photo": "book_m_s_meaning",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "Like New",
+        "Details": "No details",
+        "Specifications": "Frankl's Man's Search for Meaning provides a vivid account of an individual's experience as a prisoner in a Nazi concentration camp. The book focuses on love, hope, responsibility, inner freedom, and the beauty to be found in both nature and art as means that help one endure and overcome harrowing experiences."
+      }
     },
     {
+      "id": 13,
       "name": "Code Breaker",
       "for_sale": 0,
       "price": 10,
       "photo": "book_code_breaker",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "Like New",
+        "Details": "No details",
+        "Specifications": "“The Code Breaker” details the story of Jennifer Doudna as she embarks on a journey to unravel some of the mysteries of biology. Doudna, who grew up being told that women can't involve themselves with science, would become one of America's greatest thinkers and kindest genetic researchers."
+      }
     },
     {
+      "id": 14,
       "name": "12 rules for life",
       "for_sale": 1,
       "price": 20,
       "photo": "book_12_rfl",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "Like New",
+        "Details": "No details",
+        "Specifications": "The 12 Rules for Life. Jordan Peterson suggests that Good is the simply the prevention of Evil, and good rules that reduce unnecessary human suffering will help us to live better lives. The 12 Rules for Life in this book are built on the fundamental rule that we must each take responsibility for our own lives."
+      }
     },
     {
+      "id": 15,
       "name": "Atomic Habits",
       "for_sale": 0,
       "price": 14,
       "photo": "book_atomic_habits",
-      "tags": ["lifestyle"]
+      "tags": ["lifestyle"],
+      "description": {
+        "status": "Like New",
+        "Details": "No details",
+        "Specifications": "Atomic Habits by James Clear is a comprehensive, practical guide on how to change your habits and get 1% better every day. Using a framework called the Four Laws of Behavior Change, Atomic Habits teaches readers a simple set of rules for creating good habits and breaking bad ones."
+      }
     },
     {
+      "id": 16,
       "name": "Acer SB272 Monitor",
       "for_sale": 1,
       "price": 150,
@@ -114,6 +205,7 @@
       "tags": ["lifestyle", "work"]
     },
     {
+      "id": 17,
       "name": "LG Ultrawide FHD Monitor",
       "for_sale": 0,
       "price": 350,
@@ -121,6 +213,7 @@
       "tags": ["lifestyle", "work"]
     },
     {
+      "id": 18,
       "name": "Dell 32 inch 4k Monitor",
       "for_sale": 1,
       "price": 300,
@@ -128,6 +221,7 @@
       "tags": ["lifestyle", "work"]
     },
     {
+      "id": 19,
       "name": "LG Ultragear Monitor",
       "for_sale": 0,
       "price": 250,
@@ -135,6 +229,7 @@
       "tags": ["lifestyle", "work"]
     },
     {
+      "id": 20,
       "name": "Everyjournery Bicycle",
       "for_sale": 0,
       "price": 200,
@@ -142,6 +237,7 @@
       "tags": ["lifestyle"]
     },
     {
+      "id": 21,
       "name": "Mongoose Malus Bicycle",
       "for_sale": 1,
       "price": 198,
@@ -149,6 +245,7 @@
       "tags": ["lifestyle"]
     },
     {
+      "id": 22,
       "name": "Toyota Crown 2023",
       "for_sale": 1,
       "price": 30000,
@@ -156,6 +253,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 23,
       "name": "Toyota Mirai 2019",
       "for_sale": 1,
       "price": 23000,
@@ -163,6 +261,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 24,
       "name": "Toyota Camry 2020",
       "for_sale": 0,
       "price": 18000,
@@ -170,6 +269,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 25,
       "name": "Nissan Pathfinder",
       "for_sale": 1,
       "price": 30000,
@@ -177,6 +277,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 26,
       "name": "Nissan Frontier",
       "for_sale": 1,
       "price": 25000,
@@ -184,6 +285,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 27,
       "name": "Ford Explorer",
       "for_sale": 1,
       "price": 26000,
@@ -191,6 +293,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 28,
       "name": "Ford Escape",
       "for_sale": 0,
       "price": 22000,
@@ -198,6 +301,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 29,
       "name": "Ford Ranger",
       "for_sale": 1,
       "price": 32000,
@@ -205,6 +309,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 30,
       "name": "Jeep Grand Cherokee",
       "for_sale": 1,
       "price": 40000,
@@ -212,6 +317,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 31,
       "name": "Jeep Wrangler",
       "for_sale": 0,
       "price": 21000,
@@ -219,6 +325,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 32,
       "name": "Jeep Gladiator",
       "for_sale": 1,
       "price": 35000,
@@ -226,6 +333,7 @@
       "tags": ["motor"]
     },
     {
+      "id": 33,
       "name": "Kawasaki ninja 400",
       "for_sale": 1,
       "price": 5000,
@@ -233,6 +341,7 @@
       "tags": ["motor", "lifestyle"]
     },
     {
+      "id": 34,
       "name": "Harley Davidson Fat Boy",
       "for_sale": 1,
       "price": 13000,
@@ -240,6 +349,7 @@
       "tags": ["motor", "lifestyle"]
     },
     {
+      "id": 35,
       "name": "Kawasaki Vulcan S",
       "for_sale": 0,
       "price": 4500,
@@ -247,6 +357,7 @@
       "tags": ["motor", "lifestyle"]
     },
     {
+      "id": 36,
       "name": "Bushnell tent",
       "for_sale": 1,
       "price": 300,
@@ -254,6 +365,7 @@
       "tags": ["lifestyle"]
     },
     {
+      "id": 37,
       "name": "Hiking shoes",
       "for_sale": 0,
       "price": 100,
@@ -261,6 +373,7 @@
       "tags": ["lifestyle"]
     },
     {
+      "id": 38,
       "name": "Gibson guitar",
       "for_sale": 1,
       "price": 300,
