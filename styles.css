@@ -68,7 +68,8 @@ body {
   height: 1.5rem;
 }
 
-.sign-in {
+.sign-in,
+.logout {
   display: flex;
   align-items: center;
   gap: 1rem;

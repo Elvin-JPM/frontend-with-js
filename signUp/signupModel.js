@@ -1,7 +1,7 @@
 "use strict";
 
 export const registerUser = async (form) => {
-  const url = "http://127.0.0.1:8000/api/auth/register";
+  const url = "http://127.0.0.1:8000/auth/register";
   const formData = new FormData(form);
   const email = formData.get("email");
   const password = formData.get("password");
@@ -10,15 +10,17 @@ export const registerUser = async (form) => {
   try {
     if (password === confirmPassword) {
       const data = {
-        user: email,
+        username: email,
         password: password,
       };
 
       const response = await fetch(url, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
       });
+
+      console.log(response);
 
       if (!response.ok) {
         throw new Error("User was not created.");

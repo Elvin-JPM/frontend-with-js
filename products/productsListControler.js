@@ -2,6 +2,7 @@
 
 import { fetchProducts } from "./productsListModel.js";
 import { drawProducts } from "./productsListView.js";
+import { drawLoginSpace } from "./productsListView.js";
 // import { getSelectedElement } from "./../productDetail.js";
 
 export const getProducts = async (productsNode) => {
@@ -19,12 +20,13 @@ export const getProducts = async (productsNode) => {
     });
 
     // Adding an event listener to each card
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      card.addEventListener("click", () =>
-      {
-        
-      });
-    });
+    // const cards = document.querySelectorAll(".card");
+    // cards.forEach((card) => {
+    //   card.addEventListener("click", () => {});
+    // });
   }
+};
+
+export const getLoginContent = (loginSpace) => {
+  drawLoginSpace(loginSpace);
 };

@@ -146,6 +146,11 @@ body {
   font-size: 0.9rem;
 }
 
+.login-input:focus {
+  border: 1px solid var(--main-text-color);
+  outline: none;
+}
+
 /* .login-input:focus::placeholder {
   color: transparent;
 } */

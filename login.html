@@ -24,13 +24,27 @@
       <div class="login-right">
         <div class="login">
           <p class="login-right-title">Sign In</p>
-          <form class="login-form">
-            <input type="text" class="login-input email-input" placeholder="email" />
-            <input type="text" class="login-input password-input" placeholder="password" />
+          <form class="login-form" method="post">
+            <input
+              type="email"
+              class="login-input email-input"
+              placeholder="email"
+              name="email"
+              required
+            />
+            <input
+              type="password"
+              class="login-input password-input"
+              placeholder="password"
+              name="password"
+              required
+            />
+            <input type="submit"=" class="btn-sign-in" value="Log In">
           </form>
-          <a href="./sign-up.html" class="btn-sign-in">Sign In</a>
         </div>
       </div>
     </div>
+
+    <script type="module" src="./login/index.js"></script>
   </body>
 </html>

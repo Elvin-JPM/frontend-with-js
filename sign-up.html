@@ -7,30 +7,34 @@
     <title>Sing Up</title>
   </head>
   <body>
-    <form class="signup-form">
+    <div class="signup">
+      <p class="logo">WALLAPOP</p>
+      <p class="title">Create Account</p>
+      <form class="signup-form">
       <input 
         type="email" 
-        class="login-input email-input" 
+        class="signup-input email-input" 
         placeholder="email"
         name="email" 
         required
       />
       <input
         type="password"
-        class="login-input password-input"
+        class="signup-input password-input"
         placeholder="password"
         name="password"
         required
       />
       <input
         type="password"
-        class="login-input passwordConfirm-input"
+        class="signup-input passwordConfirm-input"
         placeholder="confirm password"
         name="confirmPassword"
         required
       />
       <input type="submit" class="btn-signup" value="Sign Up"></input>
     </form>
+    </div>
 
     <script type="module" src="./signUp/index.js"></script>
   </body>

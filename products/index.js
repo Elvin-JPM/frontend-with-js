@@ -1,10 +1,10 @@
 "use strict";
-import { getProducts } from "./products/productsListControler.js";
-
+import { getProducts } from "./productsListControler.js";
+import { getLoginContent } from "./productsListControler.js";
 // Adjusting The size of the navigation bar according to the option selected
 const selectList = document.querySelector(".categories-list");
-
 const productsNode = document.getElementById("productList");
+const loginSpace = document.querySelector(".login-space");
 
 selectList.addEventListener("change", () => {
   const selectedOption =
@@ -31,3 +31,4 @@ selectList.addEventListener("change", () => {
 });
 
 getProducts(productsNode);
+getLoginContent(loginSpace);

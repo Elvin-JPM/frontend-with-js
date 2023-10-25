@@ -2,7 +2,7 @@
 
 export const drawProducts = (product) => {
   const productContainer = document.createElement("div");
-  productContainer.className = 'card';
+  productContainer.className = "card";
   productContainer.innerHTML = `
             <a href="productDetail.html?id=${product.id}" class="goToDetail">
             <p class= "card-title">${product.name}</p>
@@ -13,4 +13,24 @@ export const drawProducts = (product) => {
             </a>
     `;
   return productContainer;
+};
+
+export const drawLoginSpace = (loginSpace) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    loginSpace.innerHTML = `
+          <a class="logout" href="/">
+            <img
+              class="sign-in-logo"
+              src="../images/uiImages/log-out.png"
+              alt="sign-in logo"
+            />
+            <p class="sign-in-text">Log Out</p>
+          </a>
+    `;
+    const logout = document.querySelector(".logout");
+    logout.addEventListener("click", () => {
+      localStorage.removeItem("token");
+    });
+  }
 };
