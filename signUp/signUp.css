@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/background-images/wallpaper-2.jpg");
+  background-image: url("../images/background-images/wallpaper-2.jpg");
   background-size: cover;
 }
 

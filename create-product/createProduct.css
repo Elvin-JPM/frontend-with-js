@@ -1,0 +1,49 @@
+:root {
+  --main-text-color: #163172;
+  --light-grey: #d8d9da;
+  --dark-grey: #61677a;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+} */
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-product {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.create-product-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 15px;
+}
+
+textarea,
+input {
+  width: 70%;
+}

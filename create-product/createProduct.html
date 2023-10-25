@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./createProduct.css" />
+    <title>Create User</title>
+  </head>
+  <body>
+    <main>
+      <section class="create-product">
+        <h3 class="title">Create product</h3>
+        <form class="create-product-form" method="post">
+          <label for="product-name">Product name: </label>
+          <input type="text" name="name" id="product-name" />
+
+          <!-- <form action="" id="product-type">
+            For sale:
+            <input type="checkbox" id="yes" name="productType[]" value="yes" />
+            <label for="yes">Yes</label>
+
+            <input type="checkbox" id="No" name="productType[]" value="no" />
+            <label for="no">No</label>
+          </form> -->
+          <!-- <label for="product-type">For sale:</label> -->
+          <!-- <select name="product-type" id="product-type" placeholder="hey">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> -->
+
+          <label for="price">Price:</label>
+          <input type="text" name="price" id="price" />
+
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="New">New</option>
+            <option value="Like new">Like New</option>
+            <option value="Used-good">Used-good</option>
+            <option value="Refurbished">Refurbished</option>
+          </select>
+
+          <label for="specifications">Specifications:</label>
+          <textarea
+            name="specifications"
+            id="specifications"
+            cols="10"
+            rows="5"
+            wrap="hard"
+            maxlength="120"
+          ></textarea>
+
+          <label for="details">Details:</label>
+          <textarea
+            name="details"
+            id="details"
+            cols="10"
+            rows="5"
+            wrap="hard"
+            maxlength="40"
+          ></textarea>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

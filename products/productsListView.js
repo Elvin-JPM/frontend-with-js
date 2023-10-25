@@ -18,6 +18,9 @@ export const drawProducts = (product) => {
 export const drawLoginSpace = (loginSpace) => {
   const token = localStorage.getItem("token");
   if (token) {
+    const btnCreateProduct =
+      '<a href="../create-product/createProduct.html" class="btn-create-product">Create Product</a>';
+    loginSpace.insertAdjacentHTML("beforebegin", btnCreateProduct);
     loginSpace.innerHTML = `
           <a class="logout" href="/">
             <img
