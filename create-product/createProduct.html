@@ -10,26 +10,23 @@
     <main>
       <section class="create-product">
         <h3 class="title">Create product</h3>
-        <form class="create-product-form" method="post">
+
+        <form
+          class="create-product-form"
+          method="post"
+          enctype="multipart/form-data"
+        >
           <label for="product-name">Product name: </label>
-          <input type="text" name="name" id="product-name" />
-
-          <!-- <form action="" id="product-type">
-            For sale:
-            <input type="checkbox" id="yes" name="productType[]" value="yes" />
-            <label for="yes">Yes</label>
-
-            <input type="checkbox" id="No" name="productType[]" value="no" />
-            <label for="no">No</label>
-          </form> -->
-          <!-- <label for="product-type">For sale:</label> -->
-          <!-- <select name="product-type" id="product-type" placeholder="hey">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select> -->
+          <input type="text" name="name" id="product-name" class="form-input" />
 
           <label for="price">Price:</label>
-          <input type="text" name="price" id="price" />
+          <input type="text" name="price" id="price" class="form-input" />
+
+          <label for="product-type">For Sale</label>
+          <select name="product-type" id="product-type">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
 
           <label for="status">Status</label>
           <select name="status" id="status">
@@ -58,8 +55,17 @@
             wrap="hard"
             maxlength="40"
           ></textarea>
+
+          <input
+            type="submit"
+            class="btnCreate-product"
+            value="Crear Producto"
+            name="crear-producto"
+          />
         </form>
       </section>
     </main>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -5,8 +5,11 @@ export const fetchProducts = async () => {
   try {
     const response = await fetch(url);
     const products = await response.json();
+    if (!response.ok) {
+      throw new Error("Couldn't get products, try again later.");
+    }
     return products;
   } catch (error) {
-    console.log("An error has occurred 😥");
+    console.log("Error:", error.message);
   }
 };

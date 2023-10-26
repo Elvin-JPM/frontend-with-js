@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  height: 100vh;
-} */
-
 main {
   height: 100vh;
   display: flex;
@@ -37,10 +33,22 @@ main {
   align-items: center;
 }
 
+.form-input {
+  height: 40px;
+}
+
+.btnCreate-product {
+  width: 30%;
+  height: 40px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
 input,
 textarea,
 select {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  border: 2px solid var(--main-text-color);
 }
 
 textarea,
