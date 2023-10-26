@@ -17,19 +17,31 @@
           enctype="multipart/form-data"
         >
           <label for="product-name">Product name: </label>
-          <input type="text" name="name" id="product-name" class="form-input" />
+          <input
+            type="text"
+            name="name"
+            id="product-name"
+            class="form-input"
+            required
+          />
 
           <label for="price">Price:</label>
-          <input type="text" name="price" id="price" class="form-input" />
+          <input
+            type="text"
+            name="price"
+            id="price"
+            class="form-input"
+            required
+          />
 
           <label for="product-type">For Sale</label>
-          <select name="product-type" id="product-type">
+          <select name="product-type" id="product-type" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
 
           <label for="status">Status</label>
-          <select name="status" id="status">
+          <select name="status" id="status" required>
             <option value="New">New</option>
             <option value="Like new">Like New</option>
             <option value="Used-good">Used-good</option>
@@ -44,6 +56,7 @@
             rows="5"
             wrap="hard"
             maxlength="120"
+            required
           ></textarea>
 
           <label for="details">Details:</label>
@@ -54,6 +67,7 @@
             rows="5"
             wrap="hard"
             maxlength="40"
+            required
           ></textarea>
 
           <input
