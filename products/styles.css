@@ -153,3 +153,17 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.error-fetching,
+.empty-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.error-fetching img,
+.empty-list img {
+  height: 60px;
+}

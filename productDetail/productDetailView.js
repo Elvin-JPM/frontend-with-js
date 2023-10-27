@@ -9,9 +9,19 @@ export const drawProductDetail = (product) => {
      } " class="detail-image"> </img>
      <div class="productDetails">
         <p class="productName">${product.name}</p>
-        <p>${product.description.status || ""}</p>
-        <p>${product.description.Details || ""}</p>
-        <p>${product.description.Specifications || ""}</p>
+        <p>${product.for_sale === 1 ? "For Sale" : "Looking to buy"}</p>
+        <p>Price: $${product.price}</p>
+        <p>Status: ${
+          !product.description ? "hey there" : product.description.status
+        }</p>
+        <p>Details: ${
+          !product.description ? "hey there" : product.description.Details
+        }</p>
+        <p>Specs: ${
+          !product.description
+            ? "hey there"
+            : product.description.Specifications
+        }</p>
      </div>
     `;
   return container;
