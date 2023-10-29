@@ -8,6 +8,7 @@ export const fetchProducts = async () => {
       throw new Error("Couldn't get products, try again later.");
     }
     const products = await response.json();
+    localStorage.setItem("productsLength", products.length);
     return products;
   } catch (error) {
     throw error;

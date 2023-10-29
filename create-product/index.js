@@ -3,9 +3,13 @@
 import { createProductController } from "./createProductController.js";
 
 const form = document.querySelector(".create-product-form");
-const buttonCreate = document.querySelector(".btnCreate-product");
+const buttonCreate = document.querySelector(".create-product-form");
+const token = localStorage.getItem("token");
+if (!token) {
+  window.location = "../";
+}
 
-buttonCreate.addEventListener("click", (e) => {
+buttonCreate.addEventListener("submit", (e) => {
   e.preventDefault();
   createProductController(form);
 });

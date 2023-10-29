@@ -1,4 +1,5 @@
 "use strict";
+import { createMessageData } from "../signUp/signupModel.js";
 
 export const createProduct = async (data) => {
   const url = "http://127.0.0.1:8000/api/products";
@@ -17,14 +18,19 @@ export const createProduct = async (data) => {
     });
 
     if (!response.ok) {
-      const responseData = await response.json();
-      throw new Error(responseData.message);
+      const errorData = createMessageData(
+        "Error",
+        `There was a problem while creating product.<br>
+        Fields marked in red must be filled.
+        `
+      );
+      throw new Error(JSON.stringify(errorData));
     }
+    let productsLength = localStorage.getItem("productsLength");
+    productsLength = Number(productsLength) + 1;
+    localStorage.setItem("productsLength", productsLength);
+    return createMessageData("Success", "Product created!");
   } catch (error) {
-    if (error.message) {
-      throw error.message;
-    } else {
-      throw error;
-    }
+    throw error;
   }
 };

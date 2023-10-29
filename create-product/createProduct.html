@@ -14,7 +14,7 @@
         <form
           class="create-product-form"
           method="post"
-          enctype="multipart/form-data"
+          class="create-product-form"
         >
           <label for="product-name">Product name: </label>
           <input
@@ -27,21 +27,23 @@
 
           <label for="price">Price:</label>
           <input
-            type="text"
+            type="number"
             name="price"
             id="price"
             class="form-input"
             required
           />
 
-          <label for="product-type">For Sale</label>
+          <label for="product-type">For Sale or Looking to buy?</label>
           <select name="product-type" id="product-type" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            <option value="" selected></option>
+            <option value="For Sale">For Sale</option>
+            <option value="Looking to buy">Looking to buy</option>
           </select>
 
           <label for="status">Status</label>
           <select name="status" id="status" required>
+            <option value="" selected></option>
             <option value="New">New</option>
             <option value="Like new">Like New</option>
             <option value="Used-good">Used-good</option>
@@ -56,6 +58,7 @@
             rows="5"
             wrap="hard"
             maxlength="120"
+            placeholder="Technical specs..."
             required
           ></textarea>
 
@@ -67,6 +70,7 @@
             rows="5"
             wrap="hard"
             maxlength="40"
+            placeholder="Scratched, dented, washed, etc..."
             required
           ></textarea>
 

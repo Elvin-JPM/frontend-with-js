@@ -15,7 +15,6 @@ export const getProducts = async (productsNode) => {
       const message = "Sorry, no products created yet.";
       const emptyProductList = drawForEmptyList(message);
       productsNode.appendChild(emptyProductList);
-      console.log("The array is empty");
     } else {
       products.forEach((product) => {
         const productType =

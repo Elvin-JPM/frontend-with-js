@@ -154,6 +154,19 @@ body {
   color: inherit;
 }
 
+.btn-create-product {
+  border: 1px solid var(--light-grey);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.btn-create-product:visited {
+  color: var(--main-text-color);
+}
+
 .error-fetching,
 .empty-list {
   display: flex;
