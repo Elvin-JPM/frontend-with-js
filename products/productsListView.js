@@ -21,12 +21,12 @@ export const drawProducts = (product) => {
   return productContainer;
 };
 
-export const drawForEmptyList = () => {
+export const drawForEmptyList = (message) => {
   const emptyListContainer = document.createElement("div");
   emptyListContainer.className = "empty-list";
   emptyListContainer.innerHTML = `
-    <img src="./images/uiImages/sad-face-in-rounded-square.png"></img>
-    <h3>No products created yet</h3>
+    <img src="../images/uiImages/sad-face-in-rounded-square.png"></img>
+    <h3>${message}</h3>
   `;
   return emptyListContainer;
 };
@@ -35,7 +35,7 @@ export const drawErrorFetching = (error) => {
   const errorFetchingList = document.createElement("div");
   errorFetchingList.className = "error-fetching";
   errorFetchingList.innerHTML = `
-    <img src="./images/uiImages/error-fetching.png"></img>
+    <img src="../images/uiImages/error-fetching.png"></img>
     <h3>${error.message}</h3>
   `;
   return errorFetchingList;

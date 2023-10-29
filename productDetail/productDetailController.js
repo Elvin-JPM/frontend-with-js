@@ -3,18 +3,29 @@
 import { fetchProduct, deleteProduct } from "./productDetailModel.js";
 import { drawProductDetail } from "./productDetailView.js";
 import { decodeToken } from "../utils/decodeToken.js";
+import { drawErrorFetching } from "../products/productsListView.js";
+import { drawForEmptyList } from "../products/productsListView.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-if (id) {
-  console.log(id); // or display it in the page
-}
 
 export const productDetailController = async (productDetail) => {
-  const productObject = await fetchProduct(id);
-  const product = drawProductDetail(productObject);
-  productDetail.appendChild(product);
-  handleDeleteProduct(productObject, productDetail);
+  try {
+    const productObject = await fetchProduct(id);
+
+    if (productObject == {}) {
+      const message = "Empty product";
+      const emptyProduct = drawForEmptyList(message);
+      productDetail.appendChild(emptyProduct);
+    } else {
+      const product = drawProductDetail(productObject);
+      productDetail.appendChild(product);
+      handleDeleteProduct(productObject, productDetail);
+    }
+  } catch (error) {
+    const errorFetching = drawErrorFetching(error);
+    productDetail.appendChild(errorFetching);
+  }
 };
 
 const handleDeleteProduct = (productObject, productDetail) => {

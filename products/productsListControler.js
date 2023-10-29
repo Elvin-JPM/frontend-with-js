@@ -12,7 +12,8 @@ export const getProducts = async (productsNode) => {
 
     if (Array.isArray(products) && products.length === 0) {
       // Handling when there are no products created yet
-      const emptyProductList = drawForEmptyList();
+      const message = "Sorry, no products created yet.";
+      const emptyProductList = drawForEmptyList(message);
       productsNode.appendChild(emptyProductList);
       console.log("The array is empty");
     } else {

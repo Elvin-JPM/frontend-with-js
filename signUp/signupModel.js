@@ -20,14 +20,23 @@ export const registerUser = async (form) => {
         headers: { "Content-Type": "application/json" },
       });
 
-      console.log(response);
-
       if (!response.ok) {
-        throw new Error("User was not created.");
+        const errorData = createMessageData(
+          "Error",
+          "Username or password not valid"
+        );
+        throw new Error(JSON.stringify(errorData));
       }
-      console.log("user successfully created!");
+      return createMessageData("Success", "User successfully created!");
     }
   } catch (error) {
-    console.log("Error:", error.message);
+    throw error;
   }
+};
+
+export const createMessageData = (type, message) => {
+  return {
+    type: type,
+    message: message,
+  };
 };

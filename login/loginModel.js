@@ -1,4 +1,5 @@
 "use strict";
+import { createMessageData } from "../signUp/signupModel.js";
 
 export const loginUser = async (email, password) => {
   const url = "http://127.0.0.1:8000/auth/login";
@@ -15,15 +16,16 @@ export const loginUser = async (email, password) => {
     });
 
     if (!response.ok) {
-      throw new Error("Incorrect username or password");
-    } else {
-      const data = await response.json();
-      localStorage.setItem("token", data.accessToken);
+      const errorData = createMessageData(
+        "Error",
+        "Incorrect user or password"
+      );
+      throw new Error(JSON.stringify(errorData));
     }
-
-    console.log("Log in successful!");
+    const data = await response.json();
+    localStorage.setItem("token", data.accessToken);
+    return createMessageData("Success", "Now you're logged in");
   } catch (error) {
-    console.log("Error:", error.message);
+    throw error;
   }
-  return response;
 };

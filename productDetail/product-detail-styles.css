@@ -19,3 +19,18 @@
   width: 200px;
   height: 300px;
 }
+
+/* Styles for error screens */
+.error-fetching,
+.empty-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.error-fetching img,
+.empty-list img {
+  height: 60px;
+}
